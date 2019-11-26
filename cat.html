@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css"><!--Csss prorpio--->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> </link>
+    <title>Comandos | Linux</title>
+  </head>
+  <body>
+  <div class="div-h1">
+				<h1>Comandos Linux</h1>
+				<img src="img/linux-logo.png" class="img-logo">
+			</div>
+				<nav class="navbar navbar-dark bg-dark">
+				<a class="btn btn-outline my-2 my-sm-0 btn-lg zoom" href="index.html">Home</a>
+				<a class="btn btn-outline my-2 my-sm-0 btn-lg zoom" href="basico.html" id="btn-dois">Comandos Básicos do linux</a>
+				<a class="btn btn-outline my-2 my-sm-0 btn-lg zoom" href="cat.html">Comandos cat</a>	
+    <!-- Botão para acionar modal -->
+				</nav>
+	<header class="header">
+			<h3 class="h3"> Comandos cat, sinal de maior ">", e super usuário </h3>
+		<table class="table text-center">
+			<tr>
+				<td><a href="#cat" > Comando cat</a> </td>
+					
+				<td><a href="#maior" > Sinal de maior ">"</a> </td>
+					
+				<td><a href="#super" > Super usuário</a> </td>
+				
+				<td><a href="#vi" > Comando vi</a> </td>
+			</tr>
+		</table>
+		<h4 class="h4" id="maior"> Sinal de maior ">" </h4>
+		<p> Esse sinal<b> > </b>é muito legal e divertido, pois ele faz coisas incriveis, com ele podemos transferir coisas para outro diretório/pasta, a função dele é direcionar Ex: <b>"arq1 > file2" </b>.<br>
+			Ou seja eu direcionei o conteudo do <b>"arq1"</b> para o <b>"file2".</b> Temos o sinal <b>>></b> diferente do sinal <b>></b> ele adiciona algo para a pasta, digamos que você quer adicionar algo e não direcionar, usamos o seguinte comando Ex: <b>arq2 >> file2 </b> <br>
+			Aqui eu adicionei coisas do <b>arq2</b> para a pasta <b>file2</b>.</p>
+		
+		<h4 class="h4" id="super">  Super usuário </h4>
+		<p> Para você poder acessar o modo super usuário, você deve digitar o seguinte comando Ex: <b><i>"su -"</i></b> 
+					ele irá pedir sua senha de login, com ela você consegue adentrar no modo super usuário, tome cuidado pois
+					com esse modo você tem acesso total a sua máquina, caso exclua algum arquivo ou programa sem querer,
+					não tem como recuperar, pode acabar danificando sua máquina caso exclua algo que não deveria. Para você poder identificar se está no modo super usuário ou no usuário basico
+					verifique por esses sinais no prompt Ex: <b><i>~$ </i>= "usuário simples" <i>~#</i> ="Super usuário"</b>.
+					<br> Para poder sair do modo super usuário, apenas digite <b>"exit"</b>.</p>
+		<h4 class="h4" id="cat"> Comando cat </h4>
+		<p> Com o comando cat podemos fazer muitas coisas interessantes e legais, como por exemplo:
+		Ver o que tem dentro de uma lista, Escrever em formato de lista, Numerar o que foi escrito em uma lista.<br>
+			
+			O comando cat serve para escrever algo na tela, exibir conteudo ou até mesmo juntar dois arquivos de texto. Vamos aos exemplos:<br>
+			<b> "cat > lista.txt << @" </b> você começa a escrever em formato de lista, como se fosse um bloco de notas. com o CTRL+D você salva esse arquivo que foi criado<br>
+			<b> "cat -n lista.txt"</b> faz a listagem do que foi escrito com numeros.<br>
+			Para exibir o que está dentro dessa lista digite o comando <b> "cat lista.txt"</b> ele irá exibir na tela o que tem escrito.<br>
+			O comando <b>"cat lista.txt > lista2.txt"</b> passa todo o conteudo do projeto.txt para o projeto2.txt, sobrescrevendo tudo por cima.<br>
+			<b>"cat lista.txt >> lista2.txt"</b> Essa sintaxe concatena "junta" dois arquivos txt, colocando o conteudo na ultima linha que foi escrito, e não sobrescrevendo o conteudo.<br>
+			Temos o comando de substituição de caracteres na tela com a seguinte sintaxe, <b>"cat lista | a-z"</b>.<br>
+			Você pode usar o comando <b> man cat</b> para visualizar o manual do cat, ou então usar o comando <b> cat -help</b> e você vera alguns comandos do cat.
+		</p>
+		<h4 class="h4" id="vi"> Comando vi </h4>
+		<p>O vi é um editor de texto padrão do linux que usamos no prompt de comando, ele é meio chatinha de se usar, porém simples, basta praticar. como iniciar, sair e comandos básicos para poder usá-lo. </p>
+		<p> Para iniciar use a sintaxe <b> "vi nome_do_arquivo"</b>. Agora sempre que for fazer algum desses comandos abaixo, precione a tecla <b>"Esq"</b> mais a tecla que deseja
+		  Ex: <b>Esq + i</b> essa sintaxe é ultilizada para começar a escrever. </p>
+		<p>Comandos básicos:</p>
+		<ol>
+			<li type="circle"> :wq - Salva o arquivo e sai do editor</li>
+			<li type="circle"> :w nome_do_arquivo - Salva o arquivo corrente com o nome especificado</li>
+			<li type="circle"> :w! nome_do_arquivo - Salva o arquivo corrente no arquivo especificado</li>
+			<li type="circle"> :q - Sai do editor</li>
+			<li type="circle"> :q! - Sai do editor sem salvar as alterações realizadas</li>
+		</ol>
+		<p>Comandos de inserção:</p>
+		<ol>
+			<li type="circle"> i - Insere texto antes do cursor</li>
+			<li type="circle"> a - Insere texto depois do cursor</li>
+			<li type="circle"> r - Insere texto no início da linha onde se encontra o cursor</li>
+			<li type="circle"> A - Insere texto no final da linha onde se encontra o cursor</li>
+			<li type="circle"> o - Adiciona linha abaixo da linha atual</li>
+			<li type="circle"> O - Adiciona linha acima da linha atual</li>
+		</ol>
+		<p>Comandos de movimentação:</p>
+		<ol>
+			<li type="circle"> Ctrl+f - Move o cursor para a próxima tela</li>
+			<li type="circle"> Ctrl+b - Move o cursor para a tela anterior</li>
+			<li type="circle"> H - Move o cursor para a primeira linha da tela</li>
+			<li type="circle"> M - Move o cursor para o meio da tela</li>
+			<li type="circle"> L - Move o cursor para a última linha da tela</li>
+			<li type="circle"> h - Move o cursor um caractere a esquerda</li>
+			<li type="circle"> j - Move o cursor para a próxima linha</li>
+			<li type="circle"> k - Move o cursor para linha anterior</li>
+			<li type="circle"> l - Move o cursor um caractere a direita</li>
+			<li type="circle"> w - Move o cursor para o início da próxima palavra (Ignora a pontuação)</li>
+			<li type="circle"> W - Move o cursor para o início da próxima palavra (Não ignora a pontuação)</li>
+			<li type="circle"> b - Move o cursor para o início da palavra anterior (Ignora a pontuação)</li>
+			<li type="circle"> B - Move o cursor para o início da palavra anterior (Não ignora a pontuação)</li>
+			<li type="circle"> 0 - Move o cursor para o início da linha atual</li>
+			<li type="circle"> ^ - Move o cursor para o primeiro caractere não branco da linha atual</li>
+			<li type="circle"> $ - Move o cursor para o final da linha atual</li>
+			<li type="circle"> nG - Move o cursor para a linha n</li>
+			<li type="circle"> G - Move o cursor para a última linha do arquivo</li>
+		</ol>
+		<p> Comandos de busca:</p>
+		<ol>
+			<li type="circle"> /palavra - Busca pela palavra ou caractere em todo o texto</li>
+			<li type="circle"> ?palavra - Move o cursor para a ocorrência anterior da palavra</li>
+			<li type="circle"> n - Repete o último comando / ou ?</li>
+			<li type="circle"> N - Repete o último comando / ou ? , na direção reversa</li>
+			<li type="circle"> Ctrl+g - Mostra o nome do arquivo, o número da linha corrente e o total de linhas</li>
+		</ol>
+		<p> Comandos de substituição e deleção:</p>
+		<ol>
+			<li type="circle"> x - Deleta o caractere que esta sob o cursor</li>
+			<li type="circle"> dw - Deleta a palavra, da posição atual do cursor ate o final</li>
+			<li type="circle"> dd - Deleta a linha atual</li>
+			<li type="circle"> D - Deleta a linha a partir da posição atual do cursor ate o final</li>
+			<li type="circle"> rx - Substitui o caractere sob o cursor pelo especificado em x(é opcional indicar o caractere)</li>
+			<li type="circle"> Rx - Substitui a palavra sob o cursor pela palavra indicada em x</li>
+			<li type="circle"> u - Desfaz a última modificação</li>
+			<li type="circle"> U - Desfaz todas as modificações feitas na linha atual</li>
+			<li type="circle"> J - Une a linha corrente a próxima</li>
+		</ol>
+	</header>
+<footer class="page-footer">
+  <!-- Footer Elements -->
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab lg fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx 1">
+          <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-9"> </a>
+          <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Desenvolvido por Marcelo Araujo. Todos os direitos reservados.
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+  </body>
+  <!--<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+  <!--creditos ft <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+</html>

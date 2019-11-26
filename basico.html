@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css"><!--Csss prorpio--->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> </link>
+    <title>Comandos | Linux</title>
+  </head>
+  <body>
+  <div class="div-h1">
+				<h1>Comandos Linux</h1>
+				<img src="img/linux-logo.png" class="img-logo">
+			</div>
+				<nav class="navbar navbar-dark bg-dark">
+				<a class="btn btn-outline my-2 my-sm-0 btn-lg zoom" href="index.html">Home</a>
+				<a class="btn btn-outline my-2 my-sm-0 btn-lg zoom" href="basico.html" id="btn-dois">Comandos Básicos do linux</a>
+				<a class="btn btn-outline my-2 my-sm-0 btn-lg zoom" href="cat.html">Comandos cat</a>
+				
+    <!-- Botão para acionar modal -->
+				</nav>
+	<header class="header">
+		<h3 class="h3"> Comandos Básicos do linux </h3>
+		<table class="table">
+			<tr>
+				<td><a href="#cd" >  cd</a> </td>
+				<td><a href="#mkdir" >  mkdir</a> </td>
+				<td><a href="#rmdir" >  rmdir</a> </td>
+				<td><a href="#clear" >  clear</a> </td>
+				<td><a href="#history" >  history</a> </td>
+				<td><a href="#pwd" >  pwd</a> </td>
+				<td><a href="#help" >  help</a> </td>
+				<td><a href="#ls -l" >  ls -l</a> </td>
+				<td><a href="#ls -l" >  grep</a> </td>
+				<td><a href="#ls -l" >  find</a> </td>
+			</tr>
+		</table>
+		<h4 class="h4" id="cd"> Comando cd </h4>
+		<p> O comando <b>"cd"</b> serve para navegação entre diretórios, para voltar ou acessar algum diretório
+			EX: <b>"cd projeto"</b> projeto é o nome do diretório/pasta.<br>
+		 Para voltar um diretório você deve usar o comando "cd ..", note que o espaço entre cd e .. é importânte, pois o Linux é sensivel a espaços e diverge de letras Maiúsculas e Minúsculas. Caso você queira voltar para o diretório Raiz, use o comando "cd  /". </p>
+		
+		<h4 class="h4" id="mkdir"> Comando mkdir </h4>
+		<p> Esse comando é bem interessante, ele cria diretórios/pasta, no Linux você raramente você irá clicar com o botão direito e clicar em criar pasta.<br>
+			Usaremos o comando mkdir Ex: <b>"mkdir projeto"</b>, pronto você criou uma pasta, note que "projeto" é o nome da pasta, no qual você pode nomear como desejar. </p>
+		
+		<h4 class="h4" id="rmdir"> Comando rmdir </h4>
+		<p> E se você precisar ou querer remover um diretório/pasta ? Como vimos acima o comando <b>"mkdir"</b> cria diretório/pasta, agora iremos aprender a como remove-lo.
+			<br>Basta usar o comando <b>"rmdir"</b>, esse comando remove diretórios/pasta Ex: <b>rmdir projeto</b>. E se eu digitar rmdir Projeto e não rmdir projeto ele irá remover ?
+			Não, pois um está com o "P" Maiúsculo e não "p" minúsculo.</p>
+		
+		<h4 class="h4" id="clear"> Comando clear </h4>
+		<p> Esse comando serve para limpar o prompt, usamos esse comando para ficar mais visivel o que estamos escrevendo e para não ficar aquele monte de letras e códigos dificultando onde estão cada coisa.<br>
+			Basta usarmos ele da seguinte forma clear, apenas digite clear e tudo será limpo Ex:<b> clear</b>.</p>
+		
+		<h4 class="h4" id="history"> Comando history </h4>
+		<p> O comando <b>"history"</b> é bem legal também, pois como diz o nome, ele demonstra o histórico de comandos que você deu, isso é importânte para caso você precisar excluir algum arquivo ou programa que você baixou, basta ver no histórico.<br>
+			Assim como o comando "clear" apenas digite <b>"history"</b> Ex: <b>history</b>.</p>
+		
+		<h4 class="h4" id="pwd"> Comando pwd </h4>
+		<p> O </b>"pwd"</b> serve como um GPS, caso você esteja perdido, que não é dificil de acontecer, use o comando <b>"pwd"</b> ele irá informar em qual diretório/pasta você se localiza.
+			Ex: <b>pwd</b>.</p>
+		
+		<h4 class="h4" id="help"> Comando help </h4>
+		<p> Mais um comando interessante o comando <b>"help"</b>, ele realmente é de grande ajuda, para usar o comando <b>"help"</b>,
+		apenas digite no prompt <b>"help"</b>, e ele irá listar diversos comandos que você pode ultilizar no Linux,
+		além de dar uma breve explicação dos comando. <b>Ex: help</b></p>
+		
+		<h4 class="h4" id="ls -l"> Comando ls -l </h4>
+		<p> Esse comando é interessante, se no Windows nós usamos o comando dir para demonstrar as pastas e diretórios que temos, esse segue o mesmo conceito,
+			Lista os as pastas e diretórios que você possui, um pouco mais divertido, pois ele deixa de uma cor diferente as pastas/diretórios.<br>
+			 Para usar ele faça da seguinte forma Ex: <b>ls -l</b> e ele irá listar para você.</p>
+		<h4 class="h4" id="ls -l"> Comando grep </h4>
+		<p> Esse comando serve para identificação de caracteres em uma lista ou arquivo por exemplo: <b>"grep -n ka lista"</b>
+		isso fará com que tudo que estiver com ka no começo, final, ou no meio da palavra seja identificado, com isso ficara uma marcação.<br>
+		Você ultilizara o comando <b>grep + ação desejada</b>.</p>
+		<p> Comandos grep: </p>
+		<ol>
+			<li type="circle">grep -n -lista todos que que forem identificados com determinada letra </li>
+			<li type="circle">grep lu ou grep -i LU - lista tudo </li>
+			<li type="circle">grep -in LU - lista por linhas </li>
+			<li type="circle"> </li>
+			<li type="circle"> </li>
+			<li type="circle"> </li>
+			<li type="circle"></li>
+			<li type="circle"> </li>
+		</ol>
+		<h4 class="h4" id="ls -l"> Extras </h4>
+		<p> O comando find serve como um localizador de arquivos, a sintaxe dele é a seguinte exemplo: <b> "find / -name".txt""</b> 
+		com esse comando você é capaz de identificar qualquer arquivo com a extensão<b>.txt</b>.</p>
+		<p> Temos o comando tail e head, que pega de uma posição a outra, eles funcionam da seguinte forma, eu quero identificar determinas linhas de uma lista, usarei a seguinte sintaxe Ex:
+		<b> tail-"13"lista head-"20" lista </b>. Eu irei pegar da linha 13 até a 20, serão exibidos para mim as linhas 13,14,15,16,17,18,19 e 20.</p>
+		
+	</header>
+    <!--Rodape-->
+<!-- Footer -->
+<footer class="page-footer">
+  <!-- Footer Elements -->
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab lg fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx 1">
+          <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-9"> </a>
+          <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x zoom"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Desenvolvido por Marcelo Araujo. Todos os direitos reservados.
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+  </body>
+  <!--<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+  <!--creditos ft <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+</html>
